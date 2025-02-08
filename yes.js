@@ -45,7 +45,7 @@ const febHolidays = [
   const ulEl = document.querySelector("ul");
   const d = new Date();
   let daynumber = d.getMonth() == 1 ? d.getDate() - 1 : 0;
-  let activeIndex = 1;
+  let activeIndex = daynumber;
   const rotate = -360 / febHolidays.length;
   init();
   function init() {
